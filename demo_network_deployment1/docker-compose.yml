@@ -5,6 +5,8 @@ services:
     image: my-host/docker_network-backend
     networks:
       docker_network_demo:
+        aliases:
+          - backend1
     
 networks:
   docker_network_demo:
