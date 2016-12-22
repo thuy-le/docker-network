@@ -6,3 +6,5 @@ services:
 
   backend:
     image: my-host/docker_network-backend:latest
+    links:
+        - db:mongo_db
