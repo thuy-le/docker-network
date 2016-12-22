@@ -1,0 +1,8 @@
+version: '2'
+services:
+
+  db:
+    image: mongo:3.0
+
+  backend:
+    image: my-host/docker_network-backend:latest
