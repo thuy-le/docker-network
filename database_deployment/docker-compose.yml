@@ -1,0 +1,15 @@
+version: '2'
+services:
+
+  db:
+    image: mongo:3.0
+    networks:
+      docker_network_demo:
+        aliases:
+          - mongo_db
+          - mongo_db2
+
+networks:
+  docker_network_demo:
+    external:
+      name: docker_network_demo
