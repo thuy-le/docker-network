@@ -12,4 +12,4 @@ services:
 networks:
   docker_network_demo:
     external:
-      name: docker_network_demo
+      name: demonetwork_demo

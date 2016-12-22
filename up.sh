@@ -8,16 +8,16 @@
     cd backend2 && make build
 )
 
-docker network create -d bridge docker_network_demo
+docker network create -d bridge demonetwork_demo
 
 (
-    cd database_deployment && docker-compose up -d
+    cd demo_network_database && docker-compose up -d
 )
 
 (
-    cd backend1_deployment && docker-compose up -d
+    cd demo_network_deployment1 && docker-compose up -d
 )
 
 (
-    cd backend2_deployment && docker-compose up -d
+    cd demo_network_deployment2 && docker-compose up -d
 )

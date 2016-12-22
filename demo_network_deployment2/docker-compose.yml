@@ -1,12 +1,12 @@
 version: '2'
 services:
 
-  backend:
-    image: my-host/docker_network-backend:latest
+  backend2:
+    image: my-host/docker_network-backend2
     networks:
       docker_network_demo:
 
 networks:
   docker_network_demo:
     external:
-      name: docker_network_demo  
+      name: demonetwork_demo  
