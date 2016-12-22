@@ -4,11 +4,11 @@ services:
   backend2:
     image: my-host/docker_network-backend2
     networks:
-      docker_network_demo:
+      docker_network_private2:
         aliases:
           - backend2
 
 networks:
-  docker_network_demo:
+  docker_network_private2:
     external:
-      name: demonetwork_demo  
+      name: demonetwork_private2

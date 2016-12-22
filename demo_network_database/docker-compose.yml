@@ -4,12 +4,17 @@ services:
   db:
     image: mongo:3.0
     networks:
-      docker_network_demo:
+      docker_network_private1:
         aliases:
           - mongo_db
+      docker_network_private2:
+        aliases:
           - mongo_db2
 
 networks:
-  docker_network_demo:
+  docker_network_private1:
     external:
-      name: demonetwork_demo
+      name: demonetwork_private1
+  docker_network_private2:
+    external:
+      name: demonetwork_private2

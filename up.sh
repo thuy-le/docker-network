@@ -8,7 +8,8 @@
     cd backend2 && make build
 )
 
-docker network create -d bridge demonetwork_demo
+docker network create -d bridge demonetwork_private1
+docker network create -d bridge demonetwork_private2
 
 (
     cd demo_network_database && docker-compose up -d
