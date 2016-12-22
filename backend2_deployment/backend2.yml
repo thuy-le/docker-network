@@ -4,4 +4,4 @@ services:
   backend2:
     image: my-host/docker_network-backend2:latest
     external_links:
-      - db:mongo_db
+      - db:mongo_db2
